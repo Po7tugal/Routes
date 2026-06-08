@@ -1,4 +1,6 @@
 import { Routes, Route, Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function App() {
   return (
     <div>
@@ -26,16 +28,63 @@ function App() {
 }
 // Estas páginas serão criadas nas próximas etapas
 function Inicio() {
-  return <div class="jumbotron">
-    <div class="text-center">
+  return <div className="jumbotron">
+    <div className="text-center">
       <h1>Centro de Inspeções de Automóveis</h1>
       <p>IPO - ESDS1</p>
     </div>
   </div>
 
 }
+
 function ClientesList() {
-  return (<h2>Página de Clientes</h2>);
+  return <div className="ClientesList">
+
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Clientes</h2>
+      </div>
+      <div class="col-md-4">
+        <button className="btn btn-primary mb-3"><i class="fa fa-plus-square"></i> Adicionar Cliente</button>
+        <button className="btn btn-secondary mb-3 ml-2"><i class="fa fa-refresh"></i> Atualizar</button>
+      </div>
+
+    </div>
+    <div className="Tabela">
+
+    </div>
+
+    <div className="row">
+      <div className="col-md-12">
+        <div className="table-responsive-sm">
+          <table className="table table-bordered">
+            <thead>
+              <tr>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Morada</th>
+                <th>NIF</th>
+                <th>Opções</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <button className="btn btn-sm btn-info"><i class="fa fa-eye"></i></button>
+                  <button className="btn btn-sm btn-warning ml-2"><i class="fa fa-pencil"></i></button>
+                  <button className="btn btn-sm btn-danger ml-2"><i class="fa fa-trash"></i></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
 }
 function VeiculosList() {
   return (<h2>Página de Veículos</h2>);
@@ -43,4 +92,5 @@ function VeiculosList() {
 function InspecoesList() {
   return (<h2>Página de Inspeções</h2>);
 }
+
 export default App
