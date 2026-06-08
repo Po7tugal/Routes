@@ -40,13 +40,13 @@ function Inicio() {
 function ClientesList() {
   return <div className="ClientesList">
 
-    <div class="row">
-      <div class="col-md-8">
+    <div className="row">
+      <div className="col-md-6 text-left">
         <h2>Clientes</h2>
       </div>
-      <div class="col-md-4">
-        <button className="btn btn-primary mb-3"><i class="fa fa-plus-square"></i> Adicionar Cliente</button>
-        <button className="btn btn-secondary mb-3 ml-2"><i class="fa fa-refresh"></i> Atualizar</button>
+      <div className="col-md-6 text-right">
+          <button className="btn btn-dark mb-3"><i class="fa fa-plus-square"></i> Adicionar Cliente</button>
+          <button className="btn btn-dark mb-3 ml-2"><i class="fa fa-refresh"></i> Atualizar</button>
       </div>
 
     </div>
@@ -57,7 +57,7 @@ function ClientesList() {
     <div className="row">
       <div className="col-md-12">
         <div className="table-responsive-sm">
-          <table className="table table-bordered">
+          <table className="table table-striped">
             <thead>
               <tr>
                 <th>Código</th>
@@ -74,9 +74,9 @@ function ClientesList() {
                 <td></td>
                 <td></td>
                 <td>
-                  <button className="btn btn-sm btn-info"><i class="fa fa-eye"></i></button>
-                  <button className="btn btn-sm btn-warning ml-2"><i class="fa fa-pencil"></i></button>
-                  <button className="btn btn-sm btn-danger ml-2"><i class="fa fa-trash"></i></button>
+                  <button className="btn btn-sm btn-dark"><i className="fa fa-eye"></i></button>
+                  <button className="btn btn-sm btn-dark ml-2"><i className="fa fa-pencil"></i></button>
+                  <button className="btn btn-sm btn-dark ml-2"><i className="fa fa-trash"></i></button>
                 </td>
               </tr>
             </tbody>
