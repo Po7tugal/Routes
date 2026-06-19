@@ -255,18 +255,18 @@ function VeiculosList() {
           </tr>
         </thead>
         <tbody>
-          {veiculos.map(veiculo => (
-            <tr key={veiculo.codveiculo}>
-              <td>{veiculo.codveiculo}</td>
-              <td>{veiculo.codmatricula}</td>
-              <td>{veiculo.datalivrete}</td>
-              <td>{veiculo.anofabrico}</td>
-              <td>{veiculo.cliente.nome}</td>
-              <td>{veiculo.marca.marca}</td>
+          {veiculos.map(veiculos => (
+            <tr key={veiculos.codveiculo}>
+              <td>{veiculos.codveiculo}</td>
+              <td>{veiculos.codmatricula}</td>
+              <td>{veiculos.datalivrete}</td>
+              <td>{veiculos.anofabrico}</td>
+              <td>{veiculos.cliente.nome}</td>
+              <td>{veiculos.marca.marca}</td>
               <td style={{ whiteSpace: 'nowrap' }}>
                 <button className="btn btn-dark btn-sm mr-2" ><i className='fa fa-eye' aria-hidden='true'></i></button>
                 <button className="btn btn-dark btn-sm mr-2" ><i className='fa fa-pencil' aria-hidden='true'></i></button>
-                <button className="btn btn-dark btn-sm" onClick={() => openDeleteModal(veiculo.codveiculo)}>
+                <button className="btn btn-dark btn-sm" onClick={() => openDeleteModal(veiculos.codveiculo)}>
                   <i className='fa fa-trash' aria-hidden='true'></i>
                 </button>
               </td>
